@@ -15,6 +15,8 @@ Run compose to start the service:
 
 > docker compose up -d
 
+Pipelines configured as type 'Edge' in this account will be automatically configured in the edge instance.
+
 Contents:
 ---------
 
