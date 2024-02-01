@@ -13,4 +13,6 @@ services:
       - "8000:8000"
     volumes:
       - ${PWD}/processor.yaml:/etc/vector/processor.yaml
+      # change this to a host mount to test specific volumes for disk buffering
+      - ${PWD}/tmp-data:/data/vector
     command: ["--config-dir", "/etc/vector"]
